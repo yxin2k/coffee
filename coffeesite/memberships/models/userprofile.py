@@ -7,8 +7,8 @@ class UserProfile(models.Model):
 
     #Additional attributes for user
     date_created = models.DateField(auto_now_add=True)
-    isSubscribed = models.BooleanField(initial=True)
-    isEmailOptIn = models.BooleanField(initial=False)
+    isSubscribed = models.BooleanField(default=True)
+    isEmailOptIn = models.BooleanField(default=False)
 
     # Override the __unicode__() method to return out something meaningful!
     def __unicode__(self):
