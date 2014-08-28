@@ -1,0 +1,1 @@
+from memberships.models.userprofile import UserProfile
