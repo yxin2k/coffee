@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from memberships.models import BillingAddress, Address
+from memberships.models import BillingAddress, ShippingAddress
 
 class GrindType(models.Model):
     type = models.CharField(max_length=64)
@@ -25,8 +25,8 @@ class SubscriptionPreferences(models.Model):
     subStartDate = models.DateField()
     subEndDate = models.DateField()
     subType = models.ForeignKey(SubscriptionType)
-    shippingAddress = models.ForeignKey(Address)
-    BillingAddress = models.OneToOneField(BillingAddress)
+    shippingAddress = models.ForeignKey(ShippingAddress)
+    billingAddress = models.OneToOneField(BillingAddress)
 
 class Meta:
     app_label = 'memberships'

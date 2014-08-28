@@ -1,7 +1,20 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-class Address(models.Model):
+#Model for State
+class Province(models.Model):
+    name = models.CharField(max_length=64, null=False)
+
+    def __unicode__(self):
+        return self.name
+
+class Country(models.Model):
+    name = models.CharField(max_length=64, null=False)
+
+    def __unicode__(self):
+        return self.name
+
+class ShippingAddress(models.Model):
 
     #Additional attributes for user
     userId = models.ForeignKey(User)
@@ -15,19 +28,6 @@ class Address(models.Model):
     # Override the __unicode__() method to return out something meaningful!
     def __unicode__(self):
         return self.address1
-
-#Model for State
-class Province(models.Model):
-    name = models.CharField(max_length=64, null=False)
-
-    def __unicode__(self):
-        return self.name
-
-class Country(models.Model):
-    name = models.CharField(max_length=64, null=False)
-
-    def __unicode__(self):
-        return self.name
 
 class BillingAddress(models.Model):
 
@@ -43,7 +43,6 @@ class BillingAddress(models.Model):
     # Override the __unicode__() method to return out something meaningful!
     def __unicode__(self):
         return self.address1
-
 
 class Meta:
     app_label = 'memberships'
