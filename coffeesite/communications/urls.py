@@ -1,16 +1,11 @@
 from django.conf.urls import patterns, include, url
-
-
-# Uncomment the next two lines to enable the admin:
-from django.contrib import admin
-admin.autodiscover()
+from communications import views
 
 urlpatterns = patterns('',
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'^communications/', include('communications.urls')),
+    url(r'^contact_us/$', views.contact_us, name='contact_us'), # NEW MAPPING!
     # Examples:
-    # url(r'^$', 'coffeesite.views.home', name='home'),
-    # url(r'^coffeesite/', include('coffeesite.foo.urls')),
+    # url(r'^$', 'djangosite.views.home', name='home'),
+    # url(r'^djangosite/', include('djangosite.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
