@@ -6,6 +6,9 @@ class GrindType(models.Model):
     type = models.CharField(max_length=64)
     isActive = models.BooleanField(default=True)
 
+    #Include model into same app
+    class Meta:
+        app_label = 'memberships'
     # Override the __unicode__() method to return out something meaningful!
     def __unicode__(self):
         return self.type
@@ -13,6 +16,9 @@ class GrindType(models.Model):
 class SubscriptionType(models.Model):
     type = models.CharField(max_length=64)
 
+    #Include model into same app
+    class Meta:
+        app_label = 'memberships'
     # Override the __unicode__() method to return out something meaningful!
     def __unicode__(self):
         return self.type
@@ -28,5 +34,9 @@ class SubscriptionPreferences(models.Model):
     shippingAddress = models.ForeignKey(ShippingAddress)
     billingAddress = models.OneToOneField(BillingAddress)
 
-class Meta:
-    app_label = 'memberships'
+    class Meta:
+        app_label = 'memberships'
+
+     # Override the __unicode__() method to return out something meaningful!
+    def __unicode__(self):
+        return self.userId
