@@ -140,6 +140,7 @@ INSTALLED_APPS = (
     'south',
     'memberships',
     'communications',
+    'faqs',
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'

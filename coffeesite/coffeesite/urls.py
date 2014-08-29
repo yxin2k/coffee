@@ -10,6 +10,7 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', TemplateView.as_view(template_name='index.html'), name="home"),
     url(r'^communications/', include('communications.urls')),
+     url(r'^faqs/', include('faqs.urls')),
     # Examples:
     # url(r'^$', 'coffeesite.views.home', name='home'),
     # url(r'^coffeesite/', include('coffeesite.foo.urls')),
