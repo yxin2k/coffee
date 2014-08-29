@@ -1,2 +1,5 @@
 #Directories to ignore
 virtualenv/
+
+#Ignore file extensions
+*.pyc
