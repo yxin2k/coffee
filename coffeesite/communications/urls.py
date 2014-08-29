@@ -2,7 +2,7 @@ from django.conf.urls import patterns, include, url
 from communications import views
 
 urlpatterns = patterns('',
-    url(r'^contact_us/$', views.contact_us, name='contact_us'), # NEW MAPPING!
+    url(r'^contact_us/$', views.contact_us, name='contact_us'),
     # Examples:
     # url(r'^$', 'djangosite.views.home', name='home'),
     # url(r'^djangosite/', include('djangosite.foo.urls')),
