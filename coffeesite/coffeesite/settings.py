@@ -11,6 +11,7 @@ MANAGERS = ADMINS
 
 # Dynamic relative path variable
 import os
+import datetime
 SETTINGS_DIR = os.path.dirname(__file__)
 PROJECT_PATH = os.path.join(SETTINGS_DIR, os.pardir)
 PROJECT_PATH = os.path.abspath(PROJECT_PATH)
@@ -19,7 +20,8 @@ TEMPLATE_PATH = os.path.join(PROJECT_PATH, 'templates')
 #Database
 DATABASE_PATH = os.path.join(PROJECT_PATH, 'coffee.db')
 #Logs
-LOGS_PATH = os.path.join(PROJECT_PATH, 'logs')
+LOGS_PATH = os.path.join(PROJECT_PATH, 'logs/')
+now = datetime.datetime.now().date()
 
 DATABASES = {
     'default': {
@@ -171,7 +173,7 @@ LOGGING = {
         'file': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': LOGS_PATH + '/coffee.log',
+            'filename': LOGS_PATH + now.__str__() + '.log',
             'formatter': 'verbose'
         },
     },

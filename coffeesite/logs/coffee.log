@@ -1,6 +1,0 @@
-[01/Sep/2014 13:31:43] DEBUG [coffeesite:37] this is a debug message!
-[01/Sep/2014 13:31:43] ERROR [coffeesite:38] this is an error message!!
-[01/Sep/2014 13:31:43] CRITICAL [coffeesite:39] critical error!
-[01/Sep/2014 13:43:39] DEBUG [communications.views:37] this is a debug message!
-[01/Sep/2014 13:43:39] ERROR [communications.views:38] this is an error message!!
-[01/Sep/2014 13:43:39] CRITICAL [communications.views:39] critical error!
