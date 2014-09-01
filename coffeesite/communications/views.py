@@ -2,10 +2,15 @@ from django.template import RequestContext
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
 from communications.forms import SubmissionForm
+import logging
+
+#App name must be declared in settings.py to use __name__
+logger = logging.getLogger(__name__)
+
 
 def index(request):
-
     return render_to_response('index.html')
+
 
 def contact_us(request):
     # Get the context from the request.
