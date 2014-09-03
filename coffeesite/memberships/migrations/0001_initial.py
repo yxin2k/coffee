@@ -85,6 +85,26 @@ class Migration(SchemaMigration):
         ))
         db.send_create_signal('memberships', ['SubscriptionPreferences'])
 
+        # Adding model 'ActionType'
+        db.create_table(u'memberships_actiontype', (
+            (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
+            ('action', self.gf('django.db.models.fields.CharField')(max_length=64)),
+        ))
+        db.send_create_signal('memberships', ['ActionType'])
+
+        # Adding model 'SubscriptionHistory'
+        db.create_table(u'memberships_subscriptionhistory', (
+            (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
+            ('userId', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['auth.User'])),
+            ('actionType', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['memberships.ActionType'])),
+            ('date', self.gf('django.db.models.fields.DateTimeField')(auto_now_add=True, blank=True)),
+            ('notes', self.gf('django.db.models.fields.CharField')(max_length=2000)),
+            ('subType', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['memberships.SubscriptionType'])),
+            ('grindType', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['memberships.GrindType'])),
+            ('price', self.gf('django.db.models.fields.DecimalField')(max_digits=4, decimal_places=2)),
+        ))
+        db.send_create_signal('memberships', ['SubscriptionHistory'])
+
 
     def backwards(self, orm):
         # Deleting model 'UserProfile'
@@ -110,6 +130,12 @@ class Migration(SchemaMigration):
 
         # Deleting model 'SubscriptionPreferences'
         db.delete_table(u'memberships_subscriptionpreferences')
+
+        # Deleting model 'ActionType'
+        db.delete_table(u'memberships_actiontype')
+
+        # Deleting model 'SubscriptionHistory'
+        db.delete_table(u'memberships_subscriptionhistory')
 
 
     models = {
@@ -149,6 +175,11 @@ class Migration(SchemaMigration):
             'model': ('django.db.models.fields.CharField', [], {'max_length': '100'}),
             'name': ('django.db.models.fields.CharField', [], {'max_length': '100'})
         },
+        'memberships.actiontype': {
+            'Meta': {'object_name': 'ActionType'},
+            'action': ('django.db.models.fields.CharField', [], {'max_length': '64'}),
+            u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'})
+        },
         'memberships.billingaddress': {
             'Meta': {'object_name': 'BillingAddress'},
             'address1': ('django.db.models.fields.CharField', [], {'max_length': '128'}),
@@ -184,6 +215,17 @@ class Migration(SchemaMigration):
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'postalCode': ('django.db.models.fields.IntegerField', [], {'default': '0'}),
             'provinceId': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['memberships.Province']"}),
+            'userId': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['auth.User']"})
+        },
+        'memberships.subscriptionhistory': {
+            'Meta': {'object_name': 'SubscriptionHistory'},
+            'actionType': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['memberships.ActionType']"}),
+            'date': ('django.db.models.fields.DateTimeField', [], {'auto_now_add': 'True', 'blank': 'True'}),
+            'grindType': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['memberships.GrindType']"}),
+            u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
+            'notes': ('django.db.models.fields.CharField', [], {'max_length': '2000'}),
+            'price': ('django.db.models.fields.DecimalField', [], {'max_digits': '4', 'decimal_places': '2'}),
+            'subType': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['memberships.SubscriptionType']"}),
             'userId': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['auth.User']"})
         },
         'memberships.subscriptionpreferences': {
