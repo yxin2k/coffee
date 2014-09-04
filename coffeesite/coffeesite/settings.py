@@ -194,6 +194,10 @@ LOGGING = {
             'handlers': ['file'],
             'level': 'DEBUG',
         },
+         'featuredcoffee': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+        },
     },
     'formatters': {
         'verbose': {

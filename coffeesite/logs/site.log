@@ -588,3 +588,88 @@ Traceback (most recent call last):
   File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/template/debug.py", line 65, in unclosed_block_tag
     raise self.source_error(source, msg)
 TemplateSyntaxError: Unclosed tag 'if'. Looking for one of: elif, else, endif 
+[04/Sep/2014 14:24:26] ERROR [django.request:212] Internal Server Error: /coffee/2014/january/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/featuredcoffee/views.py", line 21, in coffee
+    return render_to_response('featuredcoffee/coffee.html', context_dict, context)
+UnboundLocalError: local variable 'context_dict' referenced before assignment
+[04/Sep/2014 14:24:26] ERROR [django.request:212] Internal Server Error: /coffee/2014/january/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/featuredcoffee/views.py", line 21, in coffee
+    return render_to_response('featuredcoffee/coffee.html', context_dict, context)
+UnboundLocalError: local variable 'context_dict' referenced before assignment
+[04/Sep/2014 14:28:35] ERROR [django.request:212] Internal Server Error: /coffee/2014/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/featuredcoffee/views.py", line 22, in coffee
+    return render_to_response('featuredcoffee/coffee.html', context_dict, context)
+UnboundLocalError: local variable 'context_dict' referenced before assignment
+[04/Sep/2014 14:28:35] ERROR [django.request:212] Internal Server Error: /coffee/2014/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/featuredcoffee/views.py", line 22, in coffee
+    return render_to_response('featuredcoffee/coffee.html', context_dict, context)
+UnboundLocalError: local variable 'context_dict' referenced before assignment
+[04/Sep/2014 14:43:48] ERROR [featuredcoffee.views:22] get() returned more than one Coffee -- it returned 2!
+[04/Sep/2014 14:45:12] ERROR [featuredcoffee.views:23] get() returned more than one Coffee -- it returned 2!
+[04/Sep/2014 14:45:45] DEBUG [featuredcoffee.views:15] hello!
+[04/Sep/2014 14:45:45] ERROR [featuredcoffee.views:24] get() returned more than one Coffee -- it returned 2!
+[04/Sep/2014 14:47:44] ERROR [featuredcoffee.views:24] get() returned more than one Coffee -- it returned 2!
+[04/Sep/2014 14:50:41] DEBUG [featuredcoffee.views:19] [<Coffee: Grady's>, <Coffee: Starbucks>]
+[04/Sep/2014 14:50:41] DEBUG [featuredcoffee.views:20] hello!
+[04/Sep/2014 14:51:40] ERROR [featuredcoffee.views:21] invalid literal for int() with base 10: 'January'
+[04/Sep/2014 14:51:55] ERROR [django.request:212] Internal Server Error: /coffee/2014/January/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/coffeesite/urls.py", line 13, in <module>
+    url(r'^', include('featuredcoffee.urls')),
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 25, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/featuredcoffee/urls.py", line 2, in <module>
+    from featuredcoffee import views
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/featuredcoffee/views.py", line 17
+    coffee_list = Coffee.objects.all().filter(highlight_year=year, highlight_month.name=month).order_by('sort_number')
+SyntaxError: keyword can't be an expression
+[04/Sep/2014 14:51:55] ERROR [django.request:212] Internal Server Error: /coffee/2014/January/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/coffeesite/urls.py", line 13, in <module>
+    url(r'^', include('featuredcoffee.urls')),
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 25, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/featuredcoffee/urls.py", line 2, in <module>
+    from featuredcoffee import views
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/featuredcoffee/views.py", line 17
+    coffee_list = Coffee.objects.all().filter(highlight_year=year, highlight_month.name=month).order_by('sort_number')
+SyntaxError: keyword can't be an expression
+[04/Sep/2014 14:55:48] ERROR [featuredcoffee.views:22] Cannot resolve keyword 'm' into field. Choices are: description, highlight_month, highlight_year, id, name, origin, sort_number
+[04/Sep/2014 14:57:11] ERROR [featuredcoffee.views:22] Month matching query does not exist.
+[04/Sep/2014 14:57:16] ERROR [featuredcoffee.views:22] Month matching query does not exist.

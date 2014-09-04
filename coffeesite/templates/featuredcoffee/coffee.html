@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Featured Coffee</title>
+    </head>
+
+    <body>
+        <h1>Hello! This is the Coffee Page!</h1>
+        {% if year %}
+            <strong>{{ year }}</strong>
+        {% endif %}
+
+        {% if month %}
+            <strong>{{ month }}</strong>
+        {% endif %}
+
+        {% if coffee_list %}
+            <ul>
+            {% for coffee in coffee_list %}
+                <li>{{ coffee.name }}</li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <strong>No Coffee to list!</strong>
+        {% endif %}
+
+    </body>
+
+</html>
