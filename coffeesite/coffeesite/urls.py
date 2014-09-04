@@ -1,7 +1,6 @@
 from django.conf.urls import patterns, include, url
 from django.views.generic import TemplateView
 
-
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 admin.autodiscover()
@@ -9,9 +8,10 @@ admin.autodiscover()
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', TemplateView.as_view(template_name='index.html'), name="home"),
-    url(r'^communications/', include('communications.urls')),
-    url(r'^faqs/', include('faqs.urls')),
-    url(r'^featuredcoffee/', include('featuredcoffee.urls')),
+    url(r'^', include('communications.urls')),
+    url(r'^', include('faqs.urls')),
+    url(r'^', include('featuredcoffee.urls')),
+    url(r'^', include('memberships.urls')),
     # Examples:
     # url(r'^$', 'coffeesite.views.home', name='home'),
     # url(r'^coffeesite/', include('coffeesite.foo.urls')),

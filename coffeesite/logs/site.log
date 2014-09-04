@@ -1,0 +1,378 @@
+[04/Sep/2014 11:19:43] ERROR [django.request:212] Internal Server Error: /contact_us
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_response
+    response = middleware_method(request)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/middleware/common.py", line 69, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 551, in is_valid_path
+    resolve(path, urlconf)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 440, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/coffeesite/urls.py", line 15, in <module>
+    url(r'^contact_us/', views.contact_us()),
+TypeError: contact_us() takes exactly 1 argument (0 given)
+[04/Sep/2014 11:19:43] ERROR [django.request:212] Internal Server Error: /contact_us
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_response
+    response = middleware_method(request)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/middleware/common.py", line 69, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 551, in is_valid_path
+    resolve(path, urlconf)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 440, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/coffeesite/urls.py", line 15, in <module>
+    url(r'^contact_us/', views.contact_us()),
+TypeError: contact_us() takes exactly 1 argument (0 given)
+[04/Sep/2014 11:26:48] ERROR [django.request:212] Internal Server Error: /faqs/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/coffeesite/urls.py", line 16, in <module>
+    url(r'^contact_us/', views.contact_us),
+AttributeError: 'module' object has no attribute 'contact_us'
+[04/Sep/2014 11:26:48] ERROR [django.request:212] Internal Server Error: /faqs/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/coffeesite/urls.py", line 16, in <module>
+    url(r'^contact_us/', views.contact_us),
+AttributeError: 'module' object has no attribute 'contact_us'
+[04/Sep/2014 11:26:51] ERROR [django.request:212] Internal Server Error: /faqs
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_response
+    response = middleware_method(request)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/middleware/common.py", line 69, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 551, in is_valid_path
+    resolve(path, urlconf)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 440, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/coffeesite/urls.py", line 16, in <module>
+    url(r'^contact_us/', views.contact_us),
+AttributeError: 'module' object has no attribute 'contact_us'
+[04/Sep/2014 11:26:51] ERROR [django.request:212] Internal Server Error: /faqs
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_response
+    response = middleware_method(request)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/middleware/common.py", line 69, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 551, in is_valid_path
+    resolve(path, urlconf)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 440, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/coffeesite/urls.py", line 16, in <module>
+    url(r'^contact_us/', views.contact_us),
+AttributeError: 'module' object has no attribute 'contact_us'
+[04/Sep/2014 11:27:14] ERROR [django.request:212] Internal Server Error: /faqs
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_response
+    response = middleware_method(request)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/middleware/common.py", line 69, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 551, in is_valid_path
+    resolve(path, urlconf)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 440, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/coffeesite/urls.py", line 16, in <module>
+    url(r'^contact_us/', views.contact_us),
+AttributeError: 'module' object has no attribute 'contact_us'
+[04/Sep/2014 11:27:14] ERROR [django.request:212] Internal Server Error: /faqs
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_response
+    response = middleware_method(request)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/middleware/common.py", line 69, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 551, in is_valid_path
+    resolve(path, urlconf)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 440, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/coffeesite/urls.py", line 16, in <module>
+    url(r'^contact_us/', views.contact_us),
+AttributeError: 'module' object has no attribute 'contact_us'
+[04/Sep/2014 11:27:39] ERROR [django.request:212] Internal Server Error: /faqs
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_response
+    response = middleware_method(request)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/middleware/common.py", line 69, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 551, in is_valid_path
+    resolve(path, urlconf)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 440, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/coffeesite/urls.py", line 16, in <module>
+    url(r'^contact_us/', views.contact_us),
+AttributeError: 'module' object has no attribute 'contact_us'
+[04/Sep/2014 11:27:39] ERROR [django.request:212] Internal Server Error: /faqs
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_response
+    response = middleware_method(request)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/middleware/common.py", line 69, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 551, in is_valid_path
+    resolve(path, urlconf)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 440, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/coffeesite/urls.py", line 16, in <module>
+    url(r'^contact_us/', views.contact_us),
+AttributeError: 'module' object has no attribute 'contact_us'
+[04/Sep/2014 11:27:59] ERROR [django.request:212] Internal Server Error: /faqs
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_response
+    response = middleware_method(request)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/middleware/common.py", line 69, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 551, in is_valid_path
+    resolve(path, urlconf)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 440, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/coffeesite/urls.py", line 17
+    url(r'^faqs/', views.faqs)),
+   ^
+IndentationError: unexpected indent
+[04/Sep/2014 11:27:59] ERROR [django.request:212] Internal Server Error: /faqs
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_response
+    response = middleware_method(request)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/middleware/common.py", line 69, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 551, in is_valid_path
+    resolve(path, urlconf)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 440, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/coffeesite/urls.py", line 17
+    url(r'^faqs/', views.faqs)),
+   ^
+IndentationError: unexpected indent
+[04/Sep/2014 11:28:37] ERROR [django.request:212] Internal Server Error: /faqs
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_response
+    response = middleware_method(request)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/middleware/common.py", line 69, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 551, in is_valid_path
+    resolve(path, urlconf)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 440, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/coffeesite/urls.py", line 17
+    url(r'^faqs/', views.faqs)),
+   ^
+IndentationError: unexpected indent
+[04/Sep/2014 11:28:37] ERROR [django.request:212] Internal Server Error: /faqs
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_response
+    response = middleware_method(request)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/middleware/common.py", line 69, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 551, in is_valid_path
+    resolve(path, urlconf)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 440, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/coffeesite/urls.py", line 17
+    url(r'^faqs/', views.faqs)),
+   ^
+IndentationError: unexpected indent
+[04/Sep/2014 11:28:46] ERROR [django.request:212] Internal Server Error: /contact_us/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/coffeesite/urls.py", line 17
+    url(r'^faqs/', views.faqs)),
+   ^
+IndentationError: unexpected indent
+[04/Sep/2014 11:28:46] ERROR [django.request:212] Internal Server Error: /contact_us/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/coffeesite/urls.py", line 17
+    url(r'^faqs/', views.faqs)),
+   ^
+IndentationError: unexpected indent
+[04/Sep/2014 11:29:55] ERROR [django.request:212] Internal Server Error: /contact_us/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/coffeesite/urls.py", line 16, in <module>
+    url(r'^contact_us/', views.contact_us),
+AttributeError: 'module' object has no attribute 'contact_us'
+[04/Sep/2014 11:29:55] ERROR [django.request:212] Internal Server Error: /contact_us/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/coffeesite/urls.py", line 16, in <module>
+    url(r'^contact_us/', views.contact_us),
+AttributeError: 'module' object has no attribute 'contact_us'
+[04/Sep/2014 11:38:21] ERROR [django.request:212] Internal Server Error: /faqs/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/faqs/views.py", line 6, in faqs
+    return render_to_response('faqs.html')
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/template/loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: faqs.html
+[04/Sep/2014 11:38:21] ERROR [django.request:212] Internal Server Error: /faqs/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/faqs/views.py", line 6, in faqs
+    return render_to_response('faqs.html')
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/template/loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: faqs.html

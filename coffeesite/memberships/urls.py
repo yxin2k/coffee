@@ -1,9 +1,9 @@
 from django.conf.urls import patterns, include, url
-from faqs import views
+from memberships import views
 from django.views.generic import TemplateView
 
 urlpatterns = patterns('',
-    url(r'^faqs/$', views.faqs, name='faqs'),
+    url(r'^profile/$', TemplateView.as_view(template_name='featuredcoffee/coffee.html'), name="coffee"),
     # Examples:
     # url(r'^$', 'djangosite.views.home', name='home'),
     # url(r'^djangosite/', include('djangosite.foo.urls')),
