@@ -6,6 +6,30 @@
 
     <body>
         <h1>Hello! This is the FAQS Page!</h1>
+        {% if faqs_categ %}
+            <ul>
+            {% for category in faqs_categ %}
+                <li>{{ category.name }}</li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <strong>No Category to list!</strong>
+        {% endif %}
+
+        <h1>Faqs List</h1>
+        {% if faqs %}
+            <ul>
+                {% for faq in faqs %}
+                    <li>Q: {{ faq.question }}
+                        <ul>
+                            <li>A: {{ faq.answer }}</li>
+                        </ul>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <strong>No Faqs to list!</strong>
+        {% endif %}
     </body>
 
 </html>

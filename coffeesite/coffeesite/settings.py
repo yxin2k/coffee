@@ -190,6 +190,10 @@ LOGGING = {
             'handlers': ['file'],
             'level': 'DEBUG',
         },
+        'faqs': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+        },
     },
     'formatters': {
         'verbose': {
