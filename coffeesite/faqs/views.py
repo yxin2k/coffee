@@ -11,12 +11,15 @@ def faqs(request):
     # Obtain the context from the HTTP request.
     context = RequestContext(request)
 
-    faqscateg_list = FaqsCategory.objects.order_by('name')
-    faqs_list = Faqs.objects.order_by('category')
+    try:
+        faqscateg_list = FaqsCategory.objects.order_by('name')
+        faqs_list = Faqs.objects.order_by('category')
 
+        context_dict = {
+            'faqs_categ': faqscateg_list,
+            'faqs': faqs_list
+        }
+    except Exception as e:
+        logger.error(e.message)
 
-    context_dict = {
-        'faqs_categ': faqscateg_list,
-        'faqs': faqs_list
-    }
     return render_to_response('faqs/faqs.html', context_dict, context)
