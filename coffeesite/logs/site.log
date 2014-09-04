@@ -673,3 +673,65 @@ SyntaxError: keyword can't be an expression
 [04/Sep/2014 14:55:48] ERROR [featuredcoffee.views:22] Cannot resolve keyword 'm' into field. Choices are: description, highlight_month, highlight_year, id, name, origin, sort_number
 [04/Sep/2014 14:57:11] ERROR [featuredcoffee.views:22] Month matching query does not exist.
 [04/Sep/2014 14:57:16] ERROR [featuredcoffee.views:22] Month matching query does not exist.
+[04/Sep/2014 16:53:38] ERROR [django.request:212] Internal Server Error: /coffee/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+TypeError: coffee() takes exactly 3 arguments (1 given)
+[04/Sep/2014 16:53:38] ERROR [django.request:212] Internal Server Error: /coffee/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+TypeError: coffee() takes exactly 3 arguments (1 given)
+[04/Sep/2014 16:54:47] ERROR [django.request:212] Internal Server Error: /coffee/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+TypeError: coffee() takes exactly 3 arguments (1 given)
+[04/Sep/2014 16:54:47] ERROR [django.request:212] Internal Server Error: /coffee/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+TypeError: coffee() takes exactly 3 arguments (1 given)
+[04/Sep/2014 16:55:54] ERROR [django.request:212] Internal Server Error: /coffee/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/featuredcoffee/views.py", line 33, in coffee
+    if year and month is None:
+UnboundLocalError: local variable 'year' referenced before assignment
+[04/Sep/2014 16:55:54] ERROR [django.request:212] Internal Server Error: /coffee/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/featuredcoffee/views.py", line 33, in coffee
+    if year and month is None:
+UnboundLocalError: local variable 'year' referenced before assignment
+[04/Sep/2014 16:56:14] ERROR [django.request:212] Internal Server Error: /coffee/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/featuredcoffee/views.py", line 36, in coffee
+    logger.error('month is:' + month)
+TypeError: cannot concatenate 'str' and 'int' objects
+[04/Sep/2014 16:56:14] ERROR [django.request:212] Internal Server Error: /coffee/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/featuredcoffee/views.py", line 36, in coffee
+    logger.error('month is:' + month)
+TypeError: cannot concatenate 'str' and 'int' objects
+[04/Sep/2014 16:57:18] ERROR [django.request:212] Internal Server Error: /coffee/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/featuredcoffee/views.py", line 36, in coffee
+    logger.error('month is:' + year)
+TypeError: cannot concatenate 'str' and 'int' objects
+[04/Sep/2014 16:57:18] ERROR [django.request:212] Internal Server Error: /coffee/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/featuredcoffee/views.py", line 36, in coffee
+    logger.error('month is:' + year)
+TypeError: cannot concatenate 'str' and 'int' objects

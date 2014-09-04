@@ -18,6 +18,8 @@
             <ul>
             {% for coffee in coffee_list %}
                 <li>{{ coffee.name }}</li>
+                <strong>Description:</strong> {{ coffee.description }} </br>
+                <strong>Origin:</strong> {{ coffee.origin }}
             {% endfor %}
             </ul>
         {% else %}
