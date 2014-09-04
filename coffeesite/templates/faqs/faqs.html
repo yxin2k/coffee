@@ -20,6 +20,7 @@
         {% if faqs %}
             <ul>
                 {% for faq in faqs %}
+                    <strong> {{ faq.category.name }} </strong>
                     <li>Q: {{ faq.question }}
                         <ul>
                             <li>A: {{ faq.answer }}</li>
