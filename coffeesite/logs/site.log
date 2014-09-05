@@ -735,3 +735,103 @@ Traceback (most recent call last):
   File "/Users/yuchao.xin/Documents/coffee/coffeesite/featuredcoffee/views.py", line 36, in coffee
     logger.error('month is:' + year)
 TypeError: cannot concatenate 'str' and 'int' objects
+[05/Sep/2014 11:53:21] ERROR [django.request:212] Internal Server Error: /coffee/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+TypeError: coffee() takes exactly 3 arguments (1 given)
+[05/Sep/2014 11:53:21] ERROR [django.request:212] Internal Server Error: /coffee/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+TypeError: coffee() takes exactly 3 arguments (1 given)
+[05/Sep/2014 11:54:02] ERROR [django.request:212] Internal Server Error: /coffee/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/coffeesite/urls.py", line 13, in <module>
+    url(r'^', include('featuredcoffee.urls')),
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 25, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/featuredcoffee/urls.py", line 6, in <module>
+    url(r'^coffee/',views.coffee(None, None), name="coffee"),
+TypeError: coffee() takes exactly 3 arguments (2 given)
+[05/Sep/2014 11:54:02] ERROR [django.request:212] Internal Server Error: /coffee/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/coffeesite/urls.py", line 13, in <module>
+    url(r'^', include('featuredcoffee.urls')),
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 25, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/featuredcoffee/urls.py", line 6, in <module>
+    url(r'^coffee/',views.coffee(None, None), name="coffee"),
+TypeError: coffee() takes exactly 3 arguments (2 given)
+[05/Sep/2014 11:56:45] ERROR [featuredcoffee.views:27] Month matching query does not exist.
+[05/Sep/2014 11:57:32] ERROR [featuredcoffee.views:27] Month matching query does not exist.
+[05/Sep/2014 11:57:41] ERROR [featuredcoffee.views:27] Month matching query does not exist.
+[05/Sep/2014 11:57:44] ERROR [featuredcoffee.views:27] Month matching query does not exist.
+[05/Sep/2014 13:21:47] ERROR [django.request:212] Internal Server Error: /coffee/2014/january/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+TypeError: coffee() takes exactly 3 arguments (1 given)
+[05/Sep/2014 13:21:47] ERROR [django.request:212] Internal Server Error: /coffee/2014/january/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+TypeError: coffee() takes exactly 3 arguments (1 given)
+[05/Sep/2014 13:24:18] ERROR [featuredcoffee.views:27] Month matching query does not exist.
+[05/Sep/2014 13:25:51] ERROR [featuredcoffee.views:28] Month matching query does not exist.
+[05/Sep/2014 13:25:53] ERROR [featuredcoffee.views:28] Month matching query does not exist.
+[05/Sep/2014 13:28:24] ERROR [featuredcoffee.views:28] Month matching query does not exist.
+[05/Sep/2014 13:28:27] ERROR [featuredcoffee.views:28] Month matching query does not exist.
+[05/Sep/2014 13:29:31] ERROR [featuredcoffee.views:29] Month matching query does not exist.
+[05/Sep/2014 13:29:48] ERROR [featuredcoffee.views:29] Month matching query does not exist.
+[05/Sep/2014 13:30:01] ERROR [featuredcoffee.views:14] hi
+[05/Sep/2014 13:30:01] ERROR [featuredcoffee.views:17] month is:September
+[05/Sep/2014 13:30:35] ERROR [featuredcoffee.views:13] None
+[05/Sep/2014 13:30:35] ERROR [featuredcoffee.views:17] month is:September
+[05/Sep/2014 13:30:56] ERROR [featuredcoffee.views:13] None
+[05/Sep/2014 13:30:56] ERROR [featuredcoffee.views:17] month is:September
+[05/Sep/2014 13:31:27] ERROR [featuredcoffee.views:13] None
+[05/Sep/2014 13:31:27] ERROR [django.request:212] Internal Server Error: /coffee/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/featuredcoffee/views.py", line 17, in coffee
+    logger.error('month is:' + month + ', year is:' + year)
+TypeError: cannot concatenate 'str' and 'int' objects
+[05/Sep/2014 13:31:27] ERROR [django.request:212] Internal Server Error: /coffee/
+Traceback (most recent call last):
+  File "/Users/yuchao.xin/Documents/coffee/virtualenv/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuchao.xin/Documents/coffee/coffeesite/featuredcoffee/views.py", line 17, in coffee
+    logger.error('month is:' + month + ', year is:' + year)
+TypeError: cannot concatenate 'str' and 'int' objects
+[05/Sep/2014 13:31:41] ERROR [featuredcoffee.views:13] None
+[05/Sep/2014 13:31:41] ERROR [featuredcoffee.views:17] month is:September, year is:2014
+[05/Sep/2014 13:32:47] ERROR [featuredcoffee.views:28] Month matching query does not exist.
+[05/Sep/2014 13:32:49] ERROR [featuredcoffee.views:28] Month matching query does not exist.
+[05/Sep/2014 13:33:20] ERROR [featuredcoffee.views:16] month is:September, year is:2014
+[05/Sep/2014 13:33:36] ERROR [featuredcoffee.views:16] month is:September, year is:2014

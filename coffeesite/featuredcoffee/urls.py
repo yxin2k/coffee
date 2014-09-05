@@ -3,7 +3,7 @@ from featuredcoffee import views
 from django.views.generic import TemplateView
 
 urlpatterns = patterns('',
-    #url(r'^coffee/',views.coffee, name="coffee"),
+    url(r'^coffee/$',views.coffee, name="coffee"),
     url(r'^coffee/(?P<year>\w+)/(?P<month>\w+)/$',views.coffee, name="coffee"),
     # Examples:
     # url(r'^$', 'djangosite.views.home', name='home'),

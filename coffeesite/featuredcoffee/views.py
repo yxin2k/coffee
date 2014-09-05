@@ -8,12 +8,14 @@ import logging
 #App name must be declared in settings.py to use __name__
 logger = logging.getLogger(__name__)
 
-def coffee(request, year, month):
 
-    if year and month is None:
-        year = datetime.datetime.now().year
-        month = datetime.datetime.now().month
-        logger.error('month is:' + month)
+def coffee(request, year=None, month=None):
+
+    if year is None and month is None:
+        year = datetime.datetime.today().year
+        month = datetime.datetime.today().strftime('%B')
+
+
     # Obtain the context from the HTTP request.
     context = RequestContext(request)
     context_dict = {'year': year, 'month': month}
@@ -27,14 +29,3 @@ def coffee(request, year, month):
         logger.error(e.message)
 
     return render_to_response('featuredcoffee/coffee.html', context_dict, context)
-
-# def coffee(request):
-#
-#     year = datetime.datetime.today().year
-#     month = datetime.datetime.today().strftime('%B')
-#
-#     # Obtain the context from the HTTP request.
-#     context = RequestContext(request)
-#     context_dict = {'year': year, 'month': month}
-#
-#     return render_to_response('featuredcoffee/coffee.html', context_dict, context)
