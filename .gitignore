@@ -5,3 +5,4 @@ virtualenv/
 #Ignore file extensions
 *.pyc
 .DS_Store
+.log
