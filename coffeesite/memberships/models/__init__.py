@@ -6,5 +6,5 @@ from useraddress import ShippingAddress
 from subscription import GrindType
 from subscription import SubscriptionType
 from subscription import SubscriptionPreferences
-from subsciptionhistory import ActionType
-from subsciptionhistory import SubscriptionHistory
+from subscriptionhistory import ActionType
+from subscriptionhistory import SubscriptionHistory
